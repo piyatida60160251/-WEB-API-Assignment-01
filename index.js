@@ -11,13 +11,13 @@ async function run(){
 await client.connect()
 
 //Connect to database
-const db = client.db('sample_mflix')
+const db = client.db('sample_weatherdata')
 
 //Retrieve collection
-const collection = db.collection('movies')
+const collection = db.collection('data')
 
 //Query data
-const query = { rated:'TV-G' }
+const query = { callLetters:'VCSZ' }
 const cursor =  collection.find(query)
 await cursor.forEach(console.dir)
     }catch(e){
