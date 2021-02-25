@@ -11,10 +11,11 @@ async function run(){
 await client.connect()
 
 //Connect to database
+//test
 const db = client.db('sample_weatherdata')
 
 //Retrieve collection
-const collection = db.collection('data')
+
 
 //Query data
 const query = { callLetters:'VCSZ' }
